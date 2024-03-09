@@ -4,11 +4,12 @@ This is a re-visit of one of my previous projects 'pybot'. Initially, the projec
 
 
 To add PiM to your discord server, use this URL. PiM needs administrator privileges for full functionality.
+
 URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissions=8&scope=bot
 
 
 # Goals
-1) To assess the difference in python programming, programming practices, and programming readability with my current self and myself and myself before taking any higher level computer science classes('pybot').
+1) To assess the difference in python programming, practices, readability, and knowledge with my current self and myself and myself before taking any higher level computer science classes('pybot').
 2) To create a practical tool that I am able to use for myself and share with others.
 3) To become more familiar with sentiment analysis tools used in a course I am currently taking: 'Text Mining for AI' at Vrije Universiteit Amsterdam.
 
@@ -16,7 +17,7 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 - General server management functionality
 
 # Planned Features
-- Sentiment Analysis
+- Sentiment Analysis using Vader
 - Keeping track of malicious messages and reporting them to moderators
 
 
