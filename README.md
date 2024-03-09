@@ -20,4 +20,5 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 - Sentiment Analysis using Vader
 - Keeping track of malicious messages and reporting them to moderators
 
-
+# Citations
+Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
