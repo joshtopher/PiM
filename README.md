@@ -17,7 +17,7 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 - General server management functionality
 
 # Planned Features
-- Sentiment Analysis using Vader
+- Sentiment Analysis using VADER
 - Keeping track of malicious messages and reporting them to moderators
 
 # Citations
