@@ -24,7 +24,7 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 
 # Updates
 - Added basic bot commands for server management.
-- Looking for data to train sentiment analysis for discord messages.
+- Looking for data to test performance for discord messages.
 - Using Twitter sentiment data as temporary solution.
 
 # Citations
