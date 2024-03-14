@@ -10,6 +10,7 @@ class SentimentBot:
         self.data = csv_data_to_dict("archive/Messages.csv") # loading training data
 
 
+
     def polarity(self, message: str) -> dict:
         return self.vader_model.polarity_scores(message)
 

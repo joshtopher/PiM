@@ -4,6 +4,7 @@ def csv_data_to_dict(filename: str) -> dict:
     # accumulator value
     ret: dict = {}
 
+
     # open csv file containing data
     with open(filename) as f:
         reader = csv.reader(f)
