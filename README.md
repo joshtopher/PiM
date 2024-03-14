@@ -18,6 +18,7 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 
 # Planned Features
 - Sentiment Analysis using VADER(In Progress).
+- Keep track of average user sentiment and other useful statistics.
 - Replace temporary Twitter sentiment data with discord-specific sentiment labels.
 - Keeping track of malicious messages and reporting them to moderators
 
