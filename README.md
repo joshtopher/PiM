@@ -17,8 +17,14 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 - General server management functionality
 
 # Planned Features
-- Sentiment Analysis using VADER
+- Sentiment Analysis using VADER(In Progress).
+- Replace temporary Twitter sentiment data with discord-specific sentiment labels.
 - Keeping track of malicious messages and reporting them to moderators
+
+# Updates
+- Added basic bot commands for server management.
+- Looking for data to train sentiment analysis for discord messages.
+- Using Twitter sentiment data as temporary solution.
 
 # Citations
 Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
