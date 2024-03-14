@@ -27,6 +27,7 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 - Added basic bot commands for server management.
 - Added sentiment analysis using VADER. The following shows the effectiveness of VADER on the given data:
 ![image](https://github.com/joshtopher/PiM/assets/102866050/9cf94153-f291-4383-811c-f794b90d2105)
+
 In the case of this project, the score I am most concerned with is the recall of negatives, since it is important for the bot not to miss any negative messages. Therefore, at this point in time, I will be working on obtaining training data, and training a sentiment analysis tool with sklearn, which will allow me to more easily fine tune the ratings of the bot.
 
 
