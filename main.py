@@ -3,6 +3,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import discord
 from discord import Intents
+from sentiment import SentimentBot
 
 # Load discord_token from dotenv file
 load_dotenv()
@@ -12,7 +13,7 @@ token: str = os.getenv('DISCORD_TOKEN')
 intents: Intents = Intents.default()
 intents.message_content = True # NOQA
 bot = commands.Bot(command_prefix="?pim ", intents=intents, ignore_whitespace=True)
-
+sentiment_bot = SentimentBot()
 
 # Basic catch-all for unknown/unimplemented commands
 @bot.event
@@ -69,8 +70,7 @@ async def on_message(message):
     # do not self-reply
     if message.author == bot.user:
         return
-    await message.channel.send("Message Received")
+    print(sentiment_bot.polarity(message.content))
 
 
 bot.run(token)
-
