@@ -22,7 +22,6 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 # Planned Features
 - Keep track of average user sentiment and other useful statistics.
 - Keep track of malicious messages and report them to moderators
-- Fine-tune sentiment analysis.
 
 # Updates
 - Added basic bot commands for server management.
@@ -31,6 +30,7 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 
 The accuracy and some other scores of this model are not where I would like them to be, so I will attempt to train a model using local data through the sklearn library.
 - Added sentiment analysis using sklearn trained from data stored locally. The accuracy of this model is 67%, already an improvement from the previous model, however needs some fine-tuning.
+- Added some feature engineering bringing up the accuracy to 68.4%, which I am satisfied with for now but will revisit.
 
 # Citations
 Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
