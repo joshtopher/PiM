@@ -18,11 +18,11 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 - Sentiment analysis of messages using VADER
 - Find large amount of training data
 - Switch from nltk to sklearn for sentiment analysis.
-- Fine-tune sentiment analysis.
 
 # Planned Features
 - Keep track of average user sentiment and other useful statistics.
-- Keepi track of malicious messages and report them to moderators
+- Keep track of malicious messages and report them to moderators
+- Fine-tune sentiment analysis.
 
 # Updates
 - Added basic bot commands for server management.
