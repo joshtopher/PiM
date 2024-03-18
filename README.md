@@ -16,12 +16,13 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 # Current Features
 - General server management functionality
 - Sentiment analysis of messages using VADER
+- Find large amount of training data
+- Switch from nltk to sklearn for sentiment analysis.
+- Fine-tune sentiment analysis.
 
 # Planned Features
-- Find large amount of training data.(IN PROGRESS)
-- Switch from nltk to sklearn for sentiment analysis.(IN PROGRESS)
 - Keep track of average user sentiment and other useful statistics.
-- Keeping track of malicious messages and reporting them to moderators
+- Keepi track of malicious messages and report them to moderators
 
 # Updates
 - Added basic bot commands for server management.
@@ -29,8 +30,7 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 ![image](https://github.com/joshtopher/PiM/assets/102866050/9cf94153-f291-4383-811c-f794b90d2105)
 
 In the case of this project, the score I am most concerned with is the recall of negatives, since it is important for the bot not to miss any negative messages. Therefore, at this point in time, I will be working on obtaining training data, and training a sentiment analysis tool with sklearn, which will allow me to more easily fine tune the ratings of the bot.
-
-
+- Added sentiment analysis using sklearn trained from data stored locally. The accuracy of this model is 67%, already an improvement from the previous model, however needs some fine-tuning.
 
 # Citations
 Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
