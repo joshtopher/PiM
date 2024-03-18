@@ -29,7 +29,7 @@ URL: https://discord.com/oauth2/authorize?client_id=1215686228331073587&permissi
 - Added sentiment analysis using VADER. The following shows the effectiveness of VADER on the given data:
 ![image](https://github.com/joshtopher/PiM/assets/102866050/9cf94153-f291-4383-811c-f794b90d2105)
 
-In the case of this project, the score I am most concerned with is the recall of negatives, since it is important for the bot not to miss any negative messages. Therefore, at this point in time, I will be working on obtaining training data, and training a sentiment analysis tool with sklearn, which will allow me to more easily fine tune the ratings of the bot.
+The accuracy and some other scores of this model are not where I would like them to be, so I will attempt to train a model using local data through the sklearn library.
 - Added sentiment analysis using sklearn trained from data stored locally. The accuracy of this model is 67%, already an improvement from the previous model, however needs some fine-tuning.
 
 # Citations
