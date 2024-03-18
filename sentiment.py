@@ -1,4 +1,6 @@
+import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from nltk.corpus import stopwords
 from sklearn.metrics import classification_report
 from helper import *
 from sklearn.model_selection import train_test_split
@@ -8,16 +10,17 @@ from sklearn.metrics import accuracy_score
 from sklearn.pipeline import Pipeline
 
 
+
+
 # Sentiment Analysis Model using VADER
 class SentimentBot():
 
     def __init__(self):
         self.data = csv_data_to_dict("archive/Messages.csv") # loading training data
         self.vader_model = SentimentIntensityAnalyzer()
-        
 
     def polarity(self, message: str) -> dict:
-        return self.vader_model.polarity_scores(message)
+        return self.vader_model.polarity_scores(pre_process(message))
 
     def test_accuracy(self):
         gold_labels = []
@@ -47,7 +50,9 @@ class SentimentBot2():
         self.model = None
         self.data = csv_data_to_dict("archive/Messages.csv") # loading training data
         self.train()
-        
+    
+    def predict(self, message: str) -> str:
+        return self.model.predict([pre_process(message)])[0]
     
     def train(self):
         texts = []
@@ -56,11 +61,12 @@ class SentimentBot2():
             texts.append(info['text'])
             labels.append(info['sentiment_label'])
 
-        X_train, self.X_test, y_train, self.y_test = train_test_split(texts, labels, test_size=0.2, random_state=42)
+        X_train, self.X_test, y_train, self.y_test = train_test_split(texts, labels, test_size=0.17, random_state=42)
         # Define the pipeline
         self.model = Pipeline([
-            ('tfidf', TfidfVectorizer()),
-            ('clf', LinearSVC()),
+        ('tfidf', TfidfVectorizer(preprocessor=pre_process, stop_words=stopwords.words('english'), 
+                                  max_features=7000, ngram_range=(1,2), min_df=15, max_df=0.7)),
+        ('clf', LinearSVC()),
         ])
 
         # Train the model
